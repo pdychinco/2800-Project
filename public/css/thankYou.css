@@ -1,0 +1,300 @@
+body {
+  background-color: #a3e1ff;
+  margin: 0px;
+  padding-bottom: 10%;
+}
+
+#about {
+  cursor: pointer;
+}
+
+#faq {
+  cursor: pointer;
+}
+
+#contact {
+  cursor: pointer;
+}
+
+#home {
+  margin-top: 12px;
+  cursor: pointer;
+  float: left;
+}
+
+
+aside {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: end;
+  align-self: center;
+  margin-right: 30px;
+}
+
+.button {
+  font-size: 16px;
+  background-color: #a862ea;
+  border: 3px solid #a862ea;
+  color: white;
+  cursor: pointer;
+  padding: 7px 14px;
+  border-radius: 25px;
+  font-family: "Heebo", sans-serif;
+}
+
+.donationButton {
+  background-color: #a862ea;
+}
+
+.donationButton:hover {
+  background-color: #d60000;
+  border: 3px solid #d60000;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #3482c1;
+  top: 0%;
+}
+
+.topnav #Logout {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.bottomnav {
+  overflow: hidden;
+  background-color: #3482c1;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1%;
+}
+
+footer {
+  background-color: #3482c1;
+  grid-column: 1 / span 2;
+  grid-row: 5;
+  padding: 1%;
+}
+
+a {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: "Heebo", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d4b9f7;
+}
+
+h1 {
+  font-size: 28px;
+  color: #bdc6d2;
+  font-family: "Merriweather", serif;
+}
+
+h2 {
+  color: #d4b9f7;
+  font-family: "Merriweather", serif;
+}
+
+img {
+  width: 160px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+div {
+  text-align: center;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+p {
+  font-size: 15px;
+  color: black;
+  font-family: 'Mulish', sans-serif;
+}
+
+#content {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 15% 35% 35% 15%;
+  grid-template-rows: 10% 10% 40% 40% 10%;
+}
+
+#DonationRedirect,
+#ProfileRedirect {
+  font-family: "Mulish", sans-serif;
+}
+
+#ProfileRedirect:hover {
+  color: #3482c1;
+  cursor: pointer;
+  text-align: center;
+}
+
+#formPanel {
+  display: grid;
+  border-radius: 25px;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 3;
+  width: 50%;
+  height: 100%;
+}
+
+input[type="submit"] {
+  font-size: 16px;
+  background-color: #fb0066;
+  border: 3px solid #fb0066;
+  color: white;
+  cursor: pointer;
+  padding: 7px 14px;
+  border-radius: 25px;
+  font-family: "Heebo", sans-serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #d60000;
+  border: 3px solid #d60000;
+}
+
+#FAQForm {
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  #content {
+      display: grid;
+      grid-template-columns: 5% 65% 65% 5%;
+      grid-template-rows: 20% 45% 50% 5%;
+  }
+
+  #formPanel {
+      border-radius: 25px;
+      background-color: #ffffff;
+      padding: 20px;
+      border: 2px solid #ffffff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      grid-column: 2 / span 2;
+      grid-row: 2 / span 2;
+  }
+}
+
+footer {
+  background-color: #3482c1;
+  grid-column: 1 / span 6;
+  grid-row: 5;
+}
+
+/* ----------------------- The mobile view css starts here! ------------------------------- */
+
+@media only screen and (max-width: 800px) {
+  aside {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: end;
+    align-self: center;
+    margin-right: 30px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #3482c1;
+  }
+
+  .topnav #Logout {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .bottomnav {
+    overflow: hidden;
+    background-color: #3482c1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1%;
+  }
+
+  .bottomnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  footer {
+    background-color: #3482c1;
+    grid-column: 1 / span 2;
+    grid-row: 4;
+  }
+
+  a {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: "Heebo", sans-serif;
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #d4b9f7;
+  }
+
+  h1 {
+    font-size: 28px;
+    color: #bdc6d2;
+    font-family: "Merriweather", serif;
+  }
+
+  p {
+    font-size: 15px;
+    color: black;
+    font-family: 'Mulish', sans-serif;
+  }
+
+  #content {
+    padding-bottom: 5%;
+    height: 115vh;
+  }
+}
+
+/* ----------------------- The samsung/iphone view css starts here! ------------------------------- */
+
+@media only screen and (max-width: 450px) {
+  #container {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 25% 7% 7% 40% 10%;
+    justify-items: center;
+    padding-bottom: 5%;
+  }
+}

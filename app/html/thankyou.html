@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Drop Thanks</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/img/drop.png" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/thankYou.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Merriweather&family=Mulish&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="topnav">
+    <img id="home" class="icon" alt="drop-icon" src="img/drop.png">
+    <aside>
+      <form class="formlogout" id="Logout" action="/logout" method="get">
+        <input type="submit" value="Logout" />
+      </form>
+    </aside>
+  </div>
+  <div id="content">
+
+    <div id="formPanel">
+
+      <form id="ThankYouForm">
+
+        <img src="/img/2800_drop.png" alt="drop Logo" />
+
+        <h1 id="formTitle">Thank you for your donation!</h1>
+
+        <input type="button" value="Donate again" class="button donationButton" id="donateRedirect" />
+
+        <br><br>
+
+        <input type="button" value="Create another package" class="button donationButton" id="packageRedirect" />
+
+
+      </form>
+
+    </div>
+
+    <div class="bottomnav">
+      <a id="about">About</a>
+      <a id="faq">FAQ</a>
+      <a id="contact">Contact Us</a>
+    </div>
+  </div>
+  
+  <script src="/js/thanks.js"></script>
+</body>
+
+</html>

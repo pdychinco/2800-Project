@@ -1,0 +1,314 @@
+#container {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-rows: 10% 10% 40% 40% 10%;
+}
+
+@font-face {
+    font-family: 'customHeebo';
+    src: url("fonts/Heebo-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Merriweather-Regular';
+    src: url('fonts/Merriweather-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'customMul';
+    src: url("./fonts/Mulish-Regular.ttf");
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    font-family: 'Merriweather', serif;
+    padding: 2px;
+}
+
+td {
+    font-family: 'Mulish', sans-serif;
+}
+
+#about {
+    cursor: pointer;
+}
+
+#faq {
+    cursor: pointer;
+}
+
+#contact {
+    cursor: pointer;
+}
+
+#packageStatus {
+    cursor: pointer;
+}
+
+#dropLogo {
+    cursor: pointer;
+}
+
+aside {
+    grid-row: 1;
+    grid-column: 4;
+    justify-self: end;
+    align-self: center;
+    margin-right: 30px;
+}
+
+.centertext {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#navbar {
+    grid-row: 1;
+    grid-column: 4;
+    text-align: center;
+    justify-self: end;
+    align-self: center;
+    margin-right: 125px;
+}
+
+nav {
+    grid-row: 1;
+    grid-column: 1 / span 4;
+    background-color: #3482c1;
+    align-items: center;
+}
+
+.icon {
+    width: 50px;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 7px;
+}
+
+.notifImage {
+    width: 150px;
+    height: auto;
+    float: right;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+}
+
+input[type='submit'] {
+    font-size: 16px;
+    background-color: #fb0066;
+    border: 3px solid #fb0066;
+    color: white;
+    cursor: pointer;
+    padding: 7px 14px;
+    border-radius: 25px;
+    font-family: 'Heebo', sans-serif;
+}
+
+input[type='submit']:hover {
+    background-color: #d60000;
+    border: 3px solid #d60000;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 12px 20px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+
+input[type="radio"] {
+    display: inline-block;
+}
+
+#customButton {
+    background-color: #a862ea;
+    border-radius: 25px;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    height: 30px;
+    padding: 0 10px;
+    min-width: 120px;
+    max-width: 120px;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    margin-left: 20px;
+    margin-bottom: 3%;
+}
+
+#fileInput {
+    visibility: hidden;
+}
+
+#uploadPhoto {
+    visibility: hidden;
+}
+
+#uploadPhoto {
+    visibility: hidden;
+}
+
+#customText {
+    font-family: 'Mulish', sans-serif;
+}
+
+#customButton:hover {
+    opacity: 0.8;
+}
+
+input[type=button] {
+    background-color: #a862ea;
+    border-radius: 25px;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    height: 30px;
+    padding: 0 15px;
+    min-width: 150px;
+    max-width: 150px;
+    text-align: center;
+    font-family: 'Heebo', sans-serif;
+    margin-left: 20px;
+    margin-bottom: 3%;
+}
+
+
+
+input[type=button]:hover {
+    opacity: 0.8;
+}
+
+h1 {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    font-family: 'Merriweather', serif;
+    font-size: 32px;
+    align-self: center;
+}
+
+p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 18px;
+}
+
+.centertext {
+    text-align: center;
+}
+
+footer {
+    background-color: #3482c1;
+    grid-column: 1 / span 4;
+    grid-row: 5;
+    text-align: center;
+}
+
+a {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: 'Heebo', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d4b9f7
+}
+
+#miniContainer {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    background-color: #a3e1ff;
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 2;
+    justify-self: stretch;
+    align-items: center;
+    justify-items: center;
+    border-radius: 25px;
+    overflow-y: auto;
+    text-align: center;
+}
+
+/* ----------------------- The mobile view css starts here! ------------------------------- */
+
+@media only screen and (max-width: 800px) {
+    #container {
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 10% 70% 10%;
+        justify-items: center;
+    }
+
+    aside {
+        grid-row: 1;
+        grid-column: 1;
+        justify-self: end;
+        align-self: center;
+        margin-right: 15px;
+    }
+
+    #navbar {
+        grid-row: 1;
+        grid-column: 1;
+        text-align: center;
+        justify-self: end;
+        align-self: center;
+        margin-right: 110px;
+    }
+
+    nav {
+        grid-row: 1;
+        grid-column: 1;
+        justify-self: stretch;
+    }
+
+    h1 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    footer {
+        grid-column: 1;
+        grid-row: 4;
+        justify-self: stretch;
+    }
+
+    #miniContainer {
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: stretch;
+        align-items: center;
+        justify-items: center;
+    }
+
+
+}
+
+/* ----------------------- The samsung/iphone view css starts here! ------------------------------- */
+
+@media only screen and (max-width: 600px) {
+    #container {
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 10% 70% 10%;
+        justify-items: center;
+    }
+}

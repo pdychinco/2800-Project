@@ -1,0 +1,373 @@
+#container {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 10% 40% 70% 10%;
+}
+
+@font-face {
+  font-family: "customHeebo";
+  src: url("fonts/Heebo-Regular.ttf");
+}
+
+@font-face {
+  font-family: "customMerri";
+  src: url("./fonts/Merriweather-Regular.ttf");
+}
+
+@font-face {
+  font-family: "customMul";
+  src: url("./fonts/Mulish-Regular.ttf");
+}
+
+#about {
+  cursor: pointer;
+}
+
+#faq {
+  cursor: pointer;
+}
+
+#contact {
+  cursor: pointer;
+}
+
+#packageStatus {
+  cursor: pointer;
+}
+
+aside {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: end;
+  align-self: center;
+  margin-right: 30px;
+}
+
+#navbar {
+  grid-row: 1;
+  grid-column: 2;
+  text-align: center;
+  justify-self: end;
+  align-self: center;
+  margin-right: 125px;
+}
+
+nav {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  background-color: #3482c1;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+th {
+  font-family: 'Merriweather', serif;
+  padding: 2px;
+}
+
+td {
+  font-family: 'Mulish', sans-serif;
+}
+
+input[type=text],
+input[type=email] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: 'Mulish', sans-serif;
+}
+
+input[type='submit'] {
+  font-size: 16px;
+  background-color: #fb0066;
+  border: 3px solid #fb0066;
+  color: white;
+  cursor: pointer;
+  padding: 7px 14px;
+  border-radius: 25px;
+  font-family: 'Heebo', sans-serif;
+}
+
+input[type="submit"]:hover {
+  background-color: #d60000;
+  border: 3px solid #d60000;
+}
+
+#profilePicture {
+  height: auto;
+  width: 250px;
+  grid-column: 2;
+  grid-row: 2;
+  clip-path: circle(35%);
+  justify-self: center;
+  align-self: center;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 32px;
+}
+
+h3 {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+}
+
+p {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+}
+
+#name {
+  grid-column: 1;
+  grid-row: 3;
+  text-align: center;
+  align-self: start;
+}
+
+.centertext {
+  text-align: center;
+}
+
+footer {
+  background-color: #3482c1;
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  text-align: center;
+}
+
+a {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: "Heebo", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d4b9f7;
+}
+
+#miniContainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #a3e1ff;
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  justify-self: stretch;
+  align-items: center;
+  justify-items: center;
+  border-radius: 25px;
+  overflow-y: auto;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#formDiv {
+  margin: auto;
+}
+
+form {
+  text-align: center;
+}
+
+input {
+  text-align: left;
+}
+
+input[type="email"] {
+  align-self: center;
+  width: 80%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 12px 20px;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 10px;
+}
+
+::-webkit-input-placeholder {
+  text-align: left;
+}
+
+:-moz-placeholder {
+  text-align: left;
+}
+
+input[type="button"] {
+  background-color: #a862ea;
+  border-radius: 25px;
+  border-style: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  height: 30px;
+  padding: 0 15px;
+  min-width: 150px;
+  max-width: 150px;
+  text-align: center;
+  font-family: "Heebo", sans-serif;
+}
+
+#submit:hover {
+  background-color: #8b5fe2;
+}
+
+#deleteAll:hover {
+  background-color: red;
+}
+
+button {
+  background-color: #a862ea;
+  border-radius: 25px;
+  border-style: none;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  height: 50px;
+  padding: 0 15px;
+  min-width: 250px;
+  max-width: 250px;
+  text-align: center;
+  font-family: "Heebo", sans-serif;
+}
+
+/* ----------------------- The mobile view css starts here! ------------------------------- */
+
+@media only screen and (max-width: 850px) {
+  #container {
+    grid-template-columns: 100vw;
+    grid-template-rows: 10% 35% 17% 125% 10%;
+    justify-items: center;
+  }
+
+  aside {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: end;
+    align-self: center;
+    margin-right: 30px;
+  }
+
+  #navbar {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: center;
+    justify-self: end;
+    align-self: center;
+    margin-right: 110px;
+  }
+
+  nav {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: stretch;
+  }
+
+  #profilePicture {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    margin-top: 30%;
+  }
+
+  #name {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+    align-self: start;
+  }
+
+  .centertext {
+    text-align: center;
+  }
+
+  footer {
+    grid-column: 1;
+    grid-row: 5;
+    justify-self: stretch;
+  }
+
+  #miniContainer {
+    grid-column: 1;
+    grid-row: 4;
+    display: grid;
+    justify-self: stretch;
+    align-items: center;
+    justify-items: center;
+  }
+
+  button {
+    background-color: #a862ea;
+    border-radius: 50%;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    height: 115px;
+    padding: 0 15px;
+    min-width: 115px;
+    max-width: 115px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+  table {
+    display: none;
+  }
+
+  #edit {
+    display: none;
+  }
+
+  #miniContainer {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    justify-self: stretch;
+    align-items: center;
+    justify-items: center;
+  }
+
+  form {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}

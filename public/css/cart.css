@@ -1,0 +1,444 @@
+#container {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 15% 35% 35% 15%;
+  grid-template-rows: 10% 18% 40% 40% 10% 10%;
+}
+
+#about {
+  cursor: pointer;
+}
+
+#faq {
+  cursor: pointer;
+}
+
+#contact {
+  cursor: pointer;
+}
+
+#home {
+  cursor: pointer;
+}
+
+#account {
+  cursor: pointer;
+}
+
+#dropLogo {
+  cursor: pointer;
+}
+
+#delete {
+  grid-column: 2 / span 2;
+  grid-row: 5;
+  justify-self: center;
+  align-self: center;
+}
+
+aside {
+  grid-row: 1;
+  grid-column: 4;
+  justify-self: end;
+  align-self: center;
+  margin-right: 30px;
+}
+
+a {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: 'Heebo', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d4b9f7
+}
+
+p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+}
+
+#cart {
+  grid-row: 1;
+  grid-column: 4;
+  justify-self: end;
+  align-self: center;
+  margin-right: 235px;
+  cursor: pointer;
+}
+
+#navbar {
+  grid-row: 1;
+  grid-column: 4;
+  text-align: center;
+  justify-self: end;
+  align-self: center;
+  margin-right: 125px;
+}
+
+nav {
+  grid-row: 1;
+  grid-column: 1 / span 4;
+  background-color: #3482c1;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+  margin-left: 15px;
+  margin-top: 7px;
+}
+
+#payment {
+  grid-column: 4;
+  grid-row: 2;
+  justify-self: end;
+  align-self: center;
+  margin-right: 30px;
+}
+
+#total {
+  font-size: 22px;
+}
+
+#totalAmount {
+  grid-column: 2 / span 2;
+  grid-row: 2;
+  justify-self: center;
+  align-self: end;
+  font-weight: bold;
+}
+
+h1 {
+  grid-column: 1 / span 4;
+  grid-row: 2;
+  font-family: 'Merriweather', serif;
+  font-size: 32px;
+}
+
+h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+}
+
+.centertext {
+  text-align: center;
+}
+
+footer {
+  background-color: #3482c1;
+  grid-column: 1 / span 4;
+  grid-row: 6;
+  text-align: center;
+}
+
+input[type='button'] {
+  background-color: #a862ea;
+  border-radius: 25px;
+  border-style: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 7px 14px;
+  border-radius: 25px;
+  font-family: 'Heebo', sans-serif;
+}
+
+#proceedPayment {
+  padding: 15px 25px;
+}
+
+input[type='button']:hover {
+  opacity: 0.8;
+}
+
+input[type='submit'] {
+  font-size: 16px;
+  background-color: #fb0066;
+  border: 3px solid #fb0066;
+  color: white;
+  cursor: pointer;
+  padding: 7px 14px;
+  border-radius: 25px;
+  font-family: 'Heebo', sans-serif;
+}
+
+input[type='submit']:hover {
+  background-color: #d60000;
+  border: 3px solid #d60000;
+}
+
+#content {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #a3e1ff;
+  grid-column: 2 / span 2;
+  grid-row: 3 / span 2;
+  justify-self: stretch;
+  align-items: center;
+  justify-items: center;
+  border-radius: 25px;
+  overflow-y: auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.card {
+  margin: 12%;
+  padding: 5%;
+  grid-template-columns: 33% 33% 33%;
+  background-color: #75b7d8;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.2s;
+  height: auto;
+  width: 300px;
+}
+
+.bold {
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #a862ea,
+    0 0 82px #a862ea,
+    0 0 92px #a862ea,
+    0 0 102px #a862ea,
+    0 0 151px #a862ea;
+}
+
+/* ----------------------- The smaller view css starts here! ------------------------------- */
+
+@media only screen and (max-width: 1500px) {
+  #container {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 10% 10% 70% 10% 10%;
+    justify-items: center;
+  }
+
+  aside {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: end;
+    align-self: center;
+    margin-right: 15px;
+  }
+
+  #delete {
+    grid-column: 1;
+    grid-row: 5;
+    justify-self: center;
+    align-self: center;
+  }
+
+  #navbar {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: center;
+    justify-self: end;
+    align-self: center;
+    margin-right: 110px;
+  }
+
+  #cart {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: end;
+    align-self: center;
+    margin-right: 210px;
+    cursor: pointer;
+  }
+
+  nav {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: stretch;
+  }
+
+  h1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #totalAmount {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: center;
+    align-self: center;
+    font-weight: bold;
+  }
+
+  #payment {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: end;
+    align-self: center;
+  }
+
+  footer {
+    grid-column: 1;
+    grid-row: 6;
+    justify-self: stretch;
+  }
+
+  #content {
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: stretch;
+    align-items: center;
+    justify-items: center;
+    width: 98%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 49% 49%;
+    width: 98%;
+    opacity: 0.9;
+  }
+
+  .card {
+    margin: 5%;
+    padding: 5%;
+    grid-template-columns: 33% 33% 33%;
+    background-color: #75b7d8;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    height: 325px;
+    width: 165px;
+  }
+
+
+}
+
+/* ----------------------- The mobile view css starts here! ------------------------------- */
+
+@media only screen and (max-width: 1000px) {
+  #container {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 10% 10% 80% 10% 10%;
+    justify-items: center;
+  }
+
+  aside {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: end;
+    align-self: center;
+    margin-right: 15px;
+  }
+
+  #payment {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: end;
+    align-self: center;
+  }
+
+  #navbar {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: center;
+    justify-self: end;
+    align-self: center;
+    margin-right: 110px;
+  }
+
+  #cart {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: end;
+    align-self: center;
+    margin-right: 210px;
+    cursor: pointer;
+  }
+
+  nav {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: stretch;
+  }
+
+  h1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #payment {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: end;
+  }
+
+  footer {
+    grid-column: 1;
+    grid-row: 6;
+    justify-self: stretch;
+  }
+
+  #delete {
+    grid-column: 1;
+    grid-row: 5;
+    justify-self: center;
+    align-self: center;
+  }
+
+  #content {
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: stretch;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 99%;
+    width: 99%;
+    opacity: 0.9;
+  }
+
+  .card {
+    margin: 5%;
+    padding: 5%;
+    grid-template-columns: 33% 33% 33%;
+    background-color: #75b7d8;
+    border-radius: 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    height: 325px;
+    width: 165px;
+  }
+
+
+}
+
+/* ----------------------- The samsung/iphone view css starts here! ------------------------------- */
+
+@media only screen and (max-width: 600px) {
+  #container {
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 5% 20% 70% 5% 5%;
+    justify-items: center;
+  }
+
+  #payment {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: end;
+    align-self: end;
+  }
+}

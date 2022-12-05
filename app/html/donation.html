@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Drop Donation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/img/drop.png" rel="icon" type="image/x-icon" />
+  <link href="/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/donation.css">
+</head>
+
+<body>
+
+  <div id="formPanel">
+    <img id="dropLogo" src="/img/2800_drop.png" alt="drop Logo">
+    <form id="loginForm">
+      <p>Please input a monetary amount to donate!</p>
+
+      <input id="amount" type= "number" min = "1" step = "1" max = "99999999.99" placeholder="$0.00" />
+      <!-- <input id="amount" name="my_field" pattern="^\d*(\.\d{0,2})?$" placeholder="$0.00" /> -->
+      <input type="button" value="Donate" id="submit" />
+      <br>
+      <p id="errorMsg" class="centertext"></p>
+
+    </form>
+  </div>
+
+  <div class="topnav">
+    <img id="home" class="icon" alt="drop-icon" src="img/drop.png">
+    <aside>
+      <form class="formlogout" id="Logout" action="/logout" method="get">
+        <input type="submit" value="Logout" />
+      </form>
+    </aside>
+  </div>
+
+  <div class="bottomnav">
+    <footer>
+      <br>
+      <a id="about">About</a>
+      <a id="faq">FAQ</a>
+      <a id="contact">Contact Us</a>
+    </footer>
+  </div>
+
+
+  <script src="js/donate.js"></script>
+</body>
+
+</html>

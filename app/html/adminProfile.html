@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Drop Admin Dashboard</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/img/drop.png" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="css/adminProfile.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Merriweather&family=Mulish&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div id="container">
+    <nav>
+      <img id="dropLogo" class="icon" alt="drop-icon" src="img/drop.png">
+    </nav>
+
+    <div id="navbar">
+      <a id="packageStatus">Update Package Status</a>
+    </div>
+
+    <aside>
+      <form class="formlogout" action="/logout" method="get">
+        <input type="submit" value="Logout" />
+      </form>
+    </aside>
+
+    <div>
+      <img id="profilePicture" src="img/luffy.png" alt="userProfilePicture" />
+    </div>
+
+    <h1 id="name"><span id="profile_name">Username here</span></h1>
+
+    <footer>
+      <br>
+      <a id="about">About</a>
+      <a id="faq">FAQ</a>
+      <a id="contact">Contact Us</a>
+    </footer>
+
+    <div id="miniContainer">
+      <h3 id="edit" class="centertext">Edit a User</h3>
+      <table class="centertext" id="customers"></table>
+      <p class="centertext" id="message"></p>
+      <p class="centertext" id="status"></p>
+
+      <form name="myForm" id="formList">
+        <h3 id="add">Add a User</h3>
+        <input type="text" placeholder="Username" id="add-userName" />
+        <input type="text" placeholder="First name" id="add-FirstName" />
+        <input type="text" placeholder="Last name" id="add-lastName" />
+        <input type="email" placeholder="Email" id="add-email" />
+        <input type="text" placeholder="Password" id="add-password" />
+        <p>Is an Admin</p>
+        <input type="radio" name="admin" value="1" id="add-isAdmin" />
+        <br>
+        <p>Is not an Admin</p>
+        <input type="radio" name="admin" value="0" id="add-isNotAdmin" />
+        <br><br>
+        <input type="button" id="submit" value="Submit" />
+        <h3>Delete a user</h3>
+        <input type="text" placeholder="ID" id="idToDelete">
+        <input type="button" id="delete" name="delete" value="Delete" />
+      </form>
+      <br>
+    </div>
+
+
+  </div>
+
+  <script src="js/adminProfile.js"></script>
+</body>
+
+</html>

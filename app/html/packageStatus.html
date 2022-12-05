@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Update Package Status</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Generate favicons using: https://favicon.io/ -->
+  <link href="/img/drop.png" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="css/packageStatus.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Merriweather&family=Mulish&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="container">
+
+    <nav>
+      <img class="icon" id="dropLogo" alt="drop-icon" src="/img/drop.png">
+    </nav>
+
+    <div id="navbar">
+      <a id="packageStatus">Update Package Status</a>
+    </div>
+
+    <aside>
+      <form class="formlogout" action="/logout" method="get">
+        <input type="submit" value="Logout" />
+      </form>
+    </aside>
+
+    <h1 class="centertext">Update Package Status</h1>
+
+    <div id="miniContainer">
+      <h2>Undelivered Packages</h2>
+      <table class="centertext" id="packageTable"></table>
+
+      <p class="centertext" id="message"></p>
+      <p class="centertext" id="status"></p>
+
+      <br><br>
+
+      <h2 class="centertext">Update Package</h2>
+      <p>Input packageID with the corresponding picture to confirm delivery for the user!</p>
+
+      <br><br>
+      <input class="centertext" type="text" placeholder="Package ID" id="packageIdInput">
+      <br>
+
+      <form method="POST" action="/profile-upload-single" enctype="multipart/form-data">
+        <div>
+            <input id="fileInput" class="centertext" type="file" name="profile-file" required/>
+        </div>
+        <div>
+            <input id="uploadPhoto" type="submit" value="Upload" />
+        </div>
+    </form>
+      <!-- <input id="fileInput" class="centertext" type='file'> -->
+      <br>
+      <button type="button" id="customButton">Choose file</button>
+      <span id="customText">No file chosen</span>
+      <br><br><br>
+      <input class="centertext" type="button" id="submit" value="Submit" />
+
+    </div>
+
+
+
+    <footer>
+      <br>
+      <a id="about">About</a>
+      <a id="faq">FAQ</a>
+      <a id="contact">Contact Us</a>
+    </footer>
+
+  </div>
+
+  <script src="js/packageStatus.js"></script>
+</body>
+
+</html>

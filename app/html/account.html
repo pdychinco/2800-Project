@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Drop Account Settings</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="/img/drop.png" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/account.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Merriweather&family=Mulish&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div id="container">
+    <nav>
+      <img id="dropLogo" class="icon" alt="drop-icon" src="/img/drop.png" />
+    </nav>
+
+    <div id="navbar">
+      <a id="account">Account</a>
+    </div>
+
+    <aside>
+      <form class="formlogout" action="/logout" method="get">
+        <input type="submit" value="Logout" />
+      </form>
+    </aside>
+
+    <h1 class="centertext">Account</h1>
+
+    <div id="cartHistory">
+      <input type="button" value="View History" id="history" class="add" />
+    </div>
+
+    <div id="miniContainer">
+      <div id="smallestDiv">
+
+        <p>ID:</p>
+        <p><span id="id"></span></p>
+
+        <br />
+
+        <p class="center">Profile Picture:</p>
+
+        <input type="radio" checked="checked" id="profilePicAnya" name="profilePic" value="anya.jpg" />
+        <label>Option 1</label>
+        <input type="radio" id="profilePicHinata" name="profilePic" value="hinata.jpg" />
+        <label>Option 2</label>
+        <input type="radio" id="profilePicLuffy" name="profilePic" value="luffy.png" />
+        <label>Option 3</label>
+        <br /><br />
+        <input class="center" type="button" id="submit" value="Change Photo" />
+
+        <br />
+
+        <p class="text center">First name:</p>
+        <p><span id="first_name" class="first_name"></span></p>
+
+        <br />
+
+        <p class="text center">Last name:</p>
+        <p><span id="last_name"></span></p>
+
+        <br />
+
+        <p class="text center">Email:</p>
+        <p><span id="email"></span></p>
+
+        <br />
+
+        <p class="text center">Password:</p>
+        <p><span id="password"></span></p>
+
+        <br />
+        <p class="center" id="status"></p>
+      </div>
+    </div>
+
+    <footer>
+      <br />
+      <a id="about">About</a>
+      <a id="faq">FAQ</a>
+      <a id="contact">Contact Us</a>
+    </footer>
+  </div>
+
+  <script src="js/account.js"></script>
+</body>
+
+</html>

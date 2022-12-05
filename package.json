@@ -1,0 +1,16 @@
+{
+  "name": "agile-earth-44618",
+  "version": "1.0.0",
+  "engines": {
+    "node": "16.13.2"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-session": "^1.17.2",
+    "install": "^0.13.0",
+    "jsdom": "^19.0.0",
+    "multer": "^1.4.4",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3"
+  }
+}

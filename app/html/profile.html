@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/img/drop.png" rel="icon" type="image/x-icon" />
+  <link rel="stylesheet" href="/css/profile.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Merriweather&family=Mulish&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="container">
+
+    <nav>
+      <img id="dropLogo" class="icon" alt="drop-icon" src="/img/drop.png">
+    </nav>
+
+    <div id="navbar">
+      <a id="account">Account</a>
+    </div>
+
+    <aside>
+      <form class="formlogout" action="/logout" method="get">
+        <input type="submit" value="Logout" />
+      </form>
+    </aside>
+
+    <div>
+      <img id="profilePicture" alt="userProfilePicture" src="/img/drop.png">
+    </div>
+
+    <h1 id="name"><span id="profile_name">Username here</span></h1>
+
+    <p id="textUnder" class="centertext">Thank you for all your help</p>
+
+    <div id="miniContainer">
+
+      <div id="donateButton">
+        <button>Donate</button>
+      </div>
+
+      <p id="donateDescrip" class="centertext">Don't want to create a package? <br> Choose to donate money instead!</p>
+
+      <div id="packageButton">
+        <button>Create Package</button>
+      </div>
+
+      <p id="packageDescrip" class="centertext">Select what items y<span class="O">o</span>u'<span class="D">d</span> 
+        like t<span class="O">o</span> sen<span class="D">d</span> in <br> a ca<span class="R">r</span>e <span id="P">p</span>ackage t<span class="O">o</span> 
+        s<span class="O">o</span>me<span class="O">o</span>ne in Uk<span class="R">r</span>aine!</p>
+
+      <div id="notifButton">
+        <button>Notification</button>
+      </div>
+
+      <p id="notifDescrip" class="centertext">Find the delivery status of your package!</p>
+
+
+    </div>
+
+    <footer>
+      <br>
+      <a id="about">About</a>
+      <a id="faq">FAQ</a>
+      <a id="contact">Contact Us</a>
+    </footer>
+
+  </div>
+  <script src="js/profile.js"></script>
+</body>
+
+</html>

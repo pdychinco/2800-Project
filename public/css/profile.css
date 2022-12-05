@@ -1,0 +1,378 @@
+#container {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 10% 40% 40% 10%;
+}
+
+#dropLogo {
+  position: absolute;
+}
+
+#account {
+  cursor: pointer;
+}
+
+#about {
+  cursor: pointer;
+}
+
+#faq {
+  cursor: pointer;
+}
+
+#contact {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: 'customHeebo';
+  src: url("fonts/Heebo-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Merriweather-Regular';
+  src: url('fonts/Merriweather-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'customMul';
+  src: url("./fonts/Mulish-Regular.ttf");
+}
+
+img {
+  width: 160px;
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+aside {
+  grid-row: 1;
+  grid-column: 2;
+  justify-self: end;
+  align-self: center;
+  margin-right: 30px;
+}
+
+#navbar {
+  grid-row: 1;
+  grid-column: 2;
+  text-align: center;
+  justify-self: end;
+  align-self: center;
+  margin-right: 125px;
+}
+
+nav {
+  grid-row: 1;
+  grid-column: 1 / span 2;
+  background-color: #3482c1;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+input[type='submit'] {
+  font-size: 16px;
+  background-color: #fb0066;
+  border: 3px solid #fb0066;
+  color: white;
+  cursor: pointer;
+  padding: 7px 14px;
+  border-radius: 25px;
+  font-family: 'Heebo', sans-serif;
+}
+
+input[type='submit']:hover {
+  background-color: #d60000;
+  border: 3px solid #d60000;
+}
+
+#profilePicture {
+  height: auto;
+  width: 250px;
+  grid-column: 2;
+  grid-row: 2;
+  clip-path: circle(35%);
+  justify-self: center;
+  align-self: center;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 32px;
+}
+
+p {
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+}
+
+#name {
+  grid-column: 1;
+  grid-row: 3;
+  text-align: center;
+  align-self: start;
+}
+
+#textUnder {
+  padding-top: 10px;
+  grid-column: 1;
+  grid-row: 3;
+  align-self: center;
+}
+
+.centertext {
+  text-align: center;
+}
+
+footer {
+  background-color: #3482c1;
+  grid-column: 1 / span 2;
+  grid-row: 4;
+  text-align: center;
+}
+
+a {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-family: 'Heebo', sans-serif;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d4b9f7
+}
+
+#miniContainer {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #a3e1ff;
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 33% 33% 33%;
+  justify-self: stretch;
+  align-items: center;
+  justify-items: center;
+  border-radius: 25px;
+}
+
+#donateButton {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#donateDescrip {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: end;
+  justify-self: center;
+}
+
+#packageButton {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 20px;
+}
+
+#packageDescrip {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: end;
+  justify-self: center;
+}
+
+#notifButton {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#notifDescrip {
+  grid-column: 1;
+  grid-row: 3;
+  align-self: end;
+  justify-self: center;
+}
+
+button {
+  background-color: #a862ea;
+  border-radius: 25px;
+  border-style: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  height: 50px;
+  padding: 0 15px;
+  min-width: 250px;
+  max-width: 250px;
+  text-align: center;
+  font-family: 'Heebo', sans-serif;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* ----------------------- The mobile view css starts here! ------------------------------- */
+
+@media only screen and (max-width: 800px) {
+  #container {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 35% 10% 10% 50% 10%;
+    justify-items: center;
+  }
+
+  aside {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: end;
+    align-self: center;
+    margin-right: 15px;
+  }
+
+  #navbar {
+    grid-row: 1;
+    grid-column: 1;
+    text-align: center;
+    justify-self: end;
+    align-self: center;
+    margin-right: 110px;
+  }
+
+  nav {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: stretch;
+  }
+
+  #profilePicture {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: center;
+    align-self: center;
+    margin-top: 30%;
+  }
+
+  #name {
+    grid-column: 1;
+    grid-row: 3;
+    text-align: center;
+    align-self: start;
+  }
+
+  #textUnder {
+    padding-top: 10px;
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: stretch;
+  }
+
+  .centertext {
+    text-align: center;
+  }
+
+  footer {
+    grid-column: 1;
+    grid-row: 6;
+    justify-self: stretch;
+  }
+
+  #miniContainer {
+    grid-column: 1;
+    grid-row: 5;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    justify-self: stretch;
+    align-items: center;
+    justify-items: center;
+  }
+
+  #donateButton {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #donateDescrip {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: end;
+    justify-self: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  #packageButton {
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 0;
+  }
+
+  #packageDescrip {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+    justify-self: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  #notifButton {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  #notifDescrip {
+    grid-column: 3;
+    grid-row: 1;
+    align-self: end;
+    justify-self: center;
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  button {
+    background-color: #a862ea;
+    border-radius: 50%;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    height: 115px;
+    padding: 0 15px;
+    min-width: 115px;
+    max-width: 115px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+
+}
+
+/* ----------------------- The samsung/iphone view css starts here! ------------------------------- */
+
+@media only screen and (max-width: 450px) {
+  #container {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 40% 7% 7% 60% 10%;
+    justify-items: center;
+  }
+}
